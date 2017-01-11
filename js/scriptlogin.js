@@ -213,15 +213,21 @@ $btnSubmit.click(function(){
    fjs.parentNode.insertBefore(js, fjs);		
  }(document, 'script', 'facebook-jssdk'));
 
-  FB.init({
-    /**********************************************************************
-     * TODO(Developer): Change the value below with your Facebook app ID. *
-     **********************************************************************/
-    appId      : '1719424355053656',
-    status     : true,
-    xfbml      : true,
-    version    : 'v2.8'
-  });
+window.fbAsyncInit = function() {		
+ FB.init({		
+   appId      : '1719424355053656',		
+   cookie     : true,  // enable cookies to allow the server to access		
+                       // the session		
+   xfbml      : true,  // parse social plugins on this page		
+   version    : 'v2.8' // use graph api version 2.8		
+ });		
+ 		
+
+ FB.getLoginStatus(function(response) {		
+   statusChangeCallback(response);		
+ });		
+ 		
+ };
 
 FB.Event.subscribe('auth.authResponseChange', checkLoginState);
 
