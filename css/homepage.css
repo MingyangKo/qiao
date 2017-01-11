@@ -231,3 +231,12 @@ li p{
 	top:10px;
 	right:10px;
 }
+.information{
+	background-color:gray;
+	position:fixed;
+	z-index:998;
+	width:150px;
+	height:100px;
+	top:0px;
+	right:0px;
+}
