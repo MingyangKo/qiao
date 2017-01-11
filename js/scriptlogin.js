@@ -278,8 +278,7 @@ function isUserEqual(facebookAuthResponse, firebaseUser) {
   if (firebaseUser) {
     var providerData = firebaseUser.providerData;
     for (var i = 0; i < providerData.length; i++) {
-      if (providerData[i].providerId === firebase.auth.FacebookAuthProvider.PROVIDER_ID &&
-          providerData[i].uid === facebookAuthResponse.userID) {
+      if (providerData[i].providerId === firebase.auth.FacebookAuthProvider.PROVIDER_ID &&providerData[i].uid === facebookAuthResponse.userID) {
         // We don't need to re-auth the Firebase connection.
         return true;
       }
