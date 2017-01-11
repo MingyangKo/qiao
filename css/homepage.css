@@ -223,9 +223,11 @@ li p{
 	left: 56vw;
 }
 .information{
+	display:block;
 	position:fixed;
 	z-index:999;
 	width:50px;
+	height:50px;
 	top:10px;
 	right:10px;
 }
