@@ -28,3 +28,14 @@ $(function(){
         }
     });
 });
+		var flag=true;
+    $(".information").click(function(){
+	    if(flag){
+    		$(".informationback").css("display","block");
+	    }
+	    else{
+		$(".informationback").css("display","none");
+	    }
+		flag=!flag;
+
+    });
