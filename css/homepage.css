@@ -230,6 +230,7 @@ li p{
 	height:50px;
 	top:10px;
 	right:10px;
+	cursor: pointer;
 }
 .informationback{
 	display:none;
