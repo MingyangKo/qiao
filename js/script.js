@@ -16,12 +16,16 @@ $(function(){
 		});
     $(window).scroll(function() {
         if ( $(this).scrollTop() >= h){
-						$(".firstpart_position").css("top",navh+10);
+						$(".firstpart_position").css("top",navh);
+						$(".first_part").css("margin-top",navh+10);
 						$(".firstpart_position").css("height",firstparth+navh+10);
 						$("#nav_logo").css("display","inline");
             $('#nav_affix').addClass("navs");
         } else {
+						
 						$(".firstpart_position").css("top",0);
+						$(".firstpart_position").css("height",firstparth);
+						$(".first_part").css("margin-top",navh-10);
 						// $(".firstpart_position").css("height",fistparth+navh+10);
 						$("#nav_logo").css("display","none");
             $('#nav_affix').removeClass("navs");
