@@ -222,3 +222,10 @@ li p{
 	line-height: 32px;
 	left: 56vw;
 }
+.information{
+	position:fixed;
+	z-index:999;
+	width:50px;
+	top:10px;
+	right:10px;
+}
