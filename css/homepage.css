@@ -32,7 +32,7 @@ a{
 }
 #banner_ani_1{
 	position:absolute;
-	z-index: 998;
+	z-index: 997;
 	top:37vh;
 	left:6vw;
 
@@ -41,7 +41,7 @@ a{
 }
 #banner_ani_2{
 	position:absolute;
-	z-index: 998;
+	z-index: 997;
 	top:32vh;
 	left:36vw;
   -webkit-filter: drop-shadow(0px 0px  20px #AAAAAA);
@@ -49,7 +49,7 @@ a{
 }
 #banner_ani_3{
 	position:absolute;
-	z-index: 998;
+	z-index: 997;
 	top:41vh;
 	left:73vw;
   -webkit-filter: drop-shadow(0px 0px  20px #AAAAAA);
@@ -89,7 +89,7 @@ a{
 .nav_shadow{
 	width: 100vw;
 	position: relative;
-  z-index: 999;
+  z-index: 997;
   box-shadow: 0px 8px 41px -6px #242424;
   -webkit-box-shadow: 0px 8px 41px -6px #242424;
   -moz-box-shadow: 0px 8px 41px -6px #242424;
@@ -232,7 +232,7 @@ li p{
 	right:10px;
 }
 .informationback{
-	background-color:gray;
+	background-color:#AAAAAA;
 	position:fixed;
 	z-index:998;
 	width:150px;
