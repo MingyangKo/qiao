@@ -21,7 +21,13 @@ a{
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-
+	display: inline;
+}
+#banner_L{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: none;
 }
 #logo{
 	position: absolute;
@@ -241,4 +247,99 @@ li p{
 	height:100px;
 	top:0px;
 	right:0px;
+}
+@media screen and (max-width: 1024px) {
+	#banner{
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		display: none;
+	}
+	#banner_L{
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		display: inline;
+	}
+	.first_part{
+		left: 37vw;
+	}
+	.second_part{
+		left: 35vw;
+	}
+	.third_part{
+		left: 35vw;
+	}
+	.forth_part1{
+		left: 18vw;
+	}
+	.forth_part2{
+		left: 53vw;
+	}
+	.bigger_words{
+		font-size: 28px;
+	}
+	.smaller_words{
+		font-size: 22px;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	#banner_L{
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		display: inline;
+	}
+	#banner_ani_2{
+		display: none;
+	}
+	#banner_ani_3{
+		display: none;
+	}
+	li{
+		margin-left: 5vw;
+	}
+	li p{
+		font-size: 18px;
+		margin-left: 7.5vw;
+	}
+	.firstpart_position{
+		height: 48vh;
+	}
+	.first_part{
+		left: 34vw;
+		line-height: 30px;
+	}
+	.secondpart_position{
+		height: 48vh;
+	}
+	.second_part{
+		left: 32vw;
+		line-height: 25px;
+		margin-top: 70px;
+	}
+	.thirdpart_position{
+		height: 48vh;
+	}
+	.third_part{
+		left: 32vw;
+		line-height: 30px;
+	}
+	.forth_part1{
+		left: 16vw;
+		line-height: 30px;
+	}
+	.forth_part2{
+		left: 51vw;
+		line-height: 30px;
+	}
+	.bigger_words{
+		font-size: 24px;
+	}
+	.smaller_words{
+		font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+
 }
