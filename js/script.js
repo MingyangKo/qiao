@@ -27,8 +27,7 @@ $(function(){
             $('#nav_affix').removeClass("navs");
         }
     });
-});
-		var flag=true;
+			var flag=true;
     $(".information").click(function(){
 	    if(flag){
     		$(".informationback").css("display","block");
@@ -39,3 +38,5 @@ $(function(){
 		flag=!flag;
 
     });
+});
+
