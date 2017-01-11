@@ -1,7 +1,7 @@
 body{
   overflow: hidden;
   margin: 0;
-  font-family: 微軟正黑體;
+  font-family: Adobe Fangsong Std R;
 }
 .background{
   width:100vw;
@@ -57,7 +57,7 @@ p{
 
 }
 button{
-  font-family: 微軟正黑體;
+  font-family: Adobe Fangsong Std R;
   display: inline;
   width: 30vw;
   height: 7vh;
