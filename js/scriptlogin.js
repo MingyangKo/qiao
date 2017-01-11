@@ -229,7 +229,7 @@ window.fbAsyncInit = function() {
  		
  };
 
-// FB.Event.subscribe('auth.authResponseChange', checkLoginState);
+FB.Event.subscribe('auth.authResponseChange', checkLoginState);
 
 const $btnSignInWithFB=$('#btnSignInWithFB');
 $btnSignInWithFB.click(function(){
@@ -275,6 +275,7 @@ function checkLoginState(event) {
 
       });
       } else {
+        history.go(-2);
         // User is already signed-in Firebase with the correct user.
       }
     });
