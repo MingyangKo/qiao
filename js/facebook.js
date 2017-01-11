@@ -76,16 +76,16 @@ function testAPI() {
       'Thanks for logging in, ' + response.name + '!';
   });
 }
-function fbLogin() {  
-      FB.login(function(response) {
-       if (response.session) {
-         if (response.perms) {
-          //使用者已登入Facebook成功，且已授權你的應用程式存取
-         } else {
-           //使用者已登入Facebook成功，但未授權你的應用程式存取
-         }
-       } else {
-         //使用者未登入成功
-       }
-     }, {perms:'publish_stream,offline_access'}); //設定需要授權的項目
-  }
+// function fbLogin() {  
+//       FB.login(function(response) {
+//        if (response.session) {
+//          if (response.perms) {
+//           //使用者已登入Facebook成功，且已授權你的應用程式存取
+//          } else {
+//            //使用者已登入Facebook成功，但未授權你的應用程式存取
+//          }
+//        } else {
+//          //使用者未登入成功
+//        }
+//      }, {perms:'publish_stream,offline_access'}); //設定需要授權的項目
+//   }
