@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- seo -->
+    <Meta name="Keywords" Lang="zh-TW" Content="巧,手創市集,市集,手作,創意市集">
+    <meta name="Description" content="每場相遇，造就每個巧思。我們於每季舉辦手創市集，設計師能常駐市集，群眾期待每一季市集">
+    <meta name="Author" content="何璥安,柯名陽">
+    <meta name="copyright" content="本網頁著作權屬作者兩人, All Rights Reserved ">
+    <link rev="made" href="mingyangko@gmail.com">
+    <meta name="Robots" content="all">
+    <meta name="Distribution" content="Taiwan">
+    <META NAME="Creation-Date" CONTENT="12-jan-2017">
+    <meta http-equiv=”expires” content=”0″ />
+    <META name="revisit-after" CONTENT="1 days" >
+
+    <meta charset="utf-8">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <title>巧。手創市集-註冊</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+
+    <script src="js/scriptlogin.js"></script>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1719424355053656',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <img src="image/登入.png" class="background"alt="">
+
+    <div class="block">
+      <div class="block1">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="block2">
+        <h1 class="signuph">註冊新帳戶</h1>
+        <form action="#">
+          <div class="">
+            <label class="" for="email"><p>信箱&nbsp;&nbsp;</p></label>
+            <input class="input" type="text" id="email">
+          </div>
+          <div class="">
+            <label class="" for="password"><p>密碼&nbsp;&nbsp;</p></label>
+            <input class="input" type="password" id="password">
+          </div>
+          <div class="">
+            <label class="" for="username"><p>暱稱&nbsp;&nbsp;</p></label>
+            <input class="input" type="text" id="username">
+          </div>
+          <!-- SignIn/SignOut Button -->
+          <button class="" id="btnSignUp"><img src="image/登入雄.png" alt=""><p>加入我們</p></button>
+          <hr>
+          <button class="signup" id="btnSignOut"><img src="image/登入fb.png" alt=""><p>用Facebook登入</p></button><br>
+        </form>
+      </div>
+      <a href="login.html"><div class="triangle"></div><p class="back">返回上一頁</p></a>
+    </div>
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
+  </body>
+</html>

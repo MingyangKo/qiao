@@ -1,0 +1,137 @@
+body{
+  overflow: hidden;
+  margin: 0;
+  font-family: 微軟正黑體;
+}
+.background{
+  width:100vw;
+  height: 100%;
+  position: relative;
+}
+.block{
+  max-width: 80vw;
+  position: absolute;
+  left: 10vw;
+  top: 10vh;
+
+}
+.block1{
+  float: left;
+  width: 40vw;
+  height: 80vh;
+  background-color: #F4F8C4;
+  opacity:0.8;
+  text-align: center; /* 实现水平居中 */
+    /* Firefox, Chrome */
+  line-height : 80vh;
+
+    /* IE */
+  *font-size : 72vh;  /* 200px * 0.9 = 180px */
+  *font-family : Arial;
+}
+.block2{
+  float: left;
+  width: 40vw;
+  height: 80vh;
+  background-color: #C5F6C9;
+  opacity:0.8;
+  text-align: center; /* 实现水平居中 */
+}
+
+.block1 img {
+  vertical-align : middle;
+}
+h1{
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-weight: normal;
+  font-size: 30px;
+}
+.signuph{
+  margin-top: 7vh;
+}
+p{
+  display: inline;
+  font-size: 24px;
+  vertical-align : middle;
+
+}
+button{
+  font-family: 微軟正黑體;
+  display: inline;
+  width: 30vw;
+  height: 7vh;
+  margin-bottom: 3vh;
+  padding: 0;
+}
+button:hover{
+  cursor: pointer;
+}
+form img{
+  vertical-align : middle;
+  float: left;
+    height: 6.5vh;
+}
+input{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  width: 25vw- 40px;
+  height: 7vh;
+}
+#btnSignUp{
+  background-color: #F6C6C5;
+}
+#btnSignIn{
+  background-color: #F6C6C5;
+}
+#btnSignInWithFB{
+  background-color: #C5D8F6;
+}
+a{
+  font-size: 20px;
+  color: black;
+}
+form div{
+  margin-bottom: 3vh;
+}
+.triangle{
+  float: left;
+  top: 10px;
+  left: 41vw;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11.5px 19.9px 11.5px 0;
+  border-color: transparent #8e2d2d transparent transparent;
+}
+.back{
+  display: block;
+  float: left;
+  position: absolute;
+  margin: 0;
+  left:43vw ;
+  top: 10px;
+  font-size: 20px;
+  color:#8e2d2d;
+}
+hr {
+    width: 30vw;
+    margin-bottom: 3vh;
+    height: 0;
+    padding: 0;
+    border: none;
+    border-top: solid 1px ;
+    color: black;
+    text-align: center;
+}
+hr:after {
+    content: "or";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 24px;
+    padding: 0 0.25em;
+    background:#C5F6C9 ;
+}
