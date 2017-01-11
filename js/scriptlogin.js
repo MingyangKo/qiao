@@ -235,6 +235,7 @@ const $btnSignInWithFB=$('#btnSignInWithFB');
 FB.login(function(response){
   if (response.status === 'connected') {
     // Logged into your app and Facebook.
+    history.go(-2);
   } else if (response.status === 'not_authorized') {
     // The person is logged into Facebook, but not your app.
   } else {
