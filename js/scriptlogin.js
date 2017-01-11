@@ -293,3 +293,6 @@ function isUserEqual(facebookAuthResponse, firebaseUser) {
   }
   return false;
 }
+FB.logout(function(response) {
+   // Person is now logged out
+});
