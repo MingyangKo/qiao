@@ -233,7 +233,7 @@ li p{
 }
 .informationback{
 	display:none;
-	background-color:#AAAAAA;
+	background-color:#cccccc;
 	position:fixed;
 	z-index:998;
 	width:150px;
