@@ -232,7 +232,8 @@ window.fbAsyncInit = function() {
 FB.Event.subscribe('auth.authResponseChange', checkLoginState);
 
 const $btnSignInWithFB=$('#btnSignInWithFB');
-FB.login(function(response){
+$btnSignInWithFB.click(function(){
+  FB.login(function(response){
   if (response.status === 'connected') {
     // Logged into your app and Facebook.
     history.go(-2);
@@ -243,7 +244,7 @@ FB.login(function(response){
     // they are logged into this app or not.
   }
   }, {scope: 'public_profile,email'});
-$btnSignInWithFB.click(FB.login);
+});
 
 function checkLoginState(event) {
   if (event.authResponse) {
