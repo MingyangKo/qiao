@@ -205,6 +205,14 @@ $btnSubmit.click(function(){
     });
 });
 
+(function(d, s, id) {		
+   var js, fjs = d.getElementsByTagName(s)[0];		
+   if (d.getElementById(id)) return;		
+   js = d.createElement(s); js.id = id;		
+   js.src = "//connect.facebook.net/zh_TW/sdk.js";		
+   fjs.parentNode.insertBefore(js, fjs);		
+ }(document, 'script', 'facebook-jssdk'));
+
   FB.init({
     /**********************************************************************
      * TODO(Developer): Change the value below with your Facebook app ID. *
@@ -214,13 +222,6 @@ $btnSubmit.click(function(){
     xfbml      : true,
     version    : 'v2.8'
   });
-(function(d, s, id) {		
-   var js, fjs = d.getElementsByTagName(s)[0];		
-   if (d.getElementById(id)) return;		
-   js = d.createElement(s); js.id = id;		
-   js.src = "//connect.facebook.net/zh_TW/sdk.js";		
-   fjs.parentNode.insertBefore(js, fjs);		
- }(document, 'script', 'facebook-jssdk'));
 
 FB.Event.subscribe('auth.authResponseChange', checkLoginState);
 
