@@ -229,7 +229,7 @@ window.fbAsyncInit = function() {
  		
  };
 
-FB.Event.subscribe('auth.authResponseChange', checkLoginState);
+// FB.Event.subscribe('auth.authResponseChange', checkLoginState);
 
 const $btnSignInWithFB=$('#btnSignInWithFB');
 $btnSignInWithFB.click(function(){
